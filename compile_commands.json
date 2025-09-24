@@ -7,41 +7,11 @@
       "-pthread",
       "-c",
       "-o",
-      "obj/algorithms.o",
-      "src/algorithms.c"
-    ],
-    "directory": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES",
-    "file": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES/src/algorithms.c",
-    "output": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES/obj/algorithms.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-Wall",
-      "-Iinclude",
-      "-pthread",
-      "-c",
-      "-o",
       "obj/main.o",
       "src/main.c"
     ],
-    "directory": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES",
-    "file": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES/src/main.c",
-    "output": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES/obj/main.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-Wall",
-      "-Iinclude",
-      "-pthread",
-      "-c",
-      "-o",
-      "obj/parser.o",
-      "src/parser.c"
-    ],
-    "directory": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES",
-    "file": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES/src/parser.c",
-    "output": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-PAGES/obj/parser.o"
+    "directory": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-FS",
+    "file": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-FS/src/main.c",
+    "output": "/home/bix/Documents/ano3/sistemas_operacionais/trabalhos/Trabalho-FS/obj/main.o"
   }
 ]

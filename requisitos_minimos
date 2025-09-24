@@ -1,0 +1,26 @@
+Requisitos mínimos:
+- copiar para dentro do FS, copiar para fora do FS, Renomear, Apagar/Remover Arquivo, Listar Arquivos, Listar Espaço Livre
+- 1 diretório (raiz)
+- integridade (conteúdo do arquivo que entra deve ser rigorosamente igual ao que sai, podem usar md5sum ou sha256sum pra testar manualmente se não está corrompendo)
+Requisitos Recomendados
+- número variável de diretórios/pastas
+- hierarquia de diretórios com criar, remover vazio, renomear, mudar de diretório
+- remover diretórios não vazios
+- metadados ocuparem parte do FS (e não ser contabilizado a mais)
+- mostrar tamanho real dos arquivos vs tamanho efetivamente ocupado
+
+• alguns parâmetros devem ser decididos na implementação:
+• tamanho do bloco
+• tamanho máximo do nome dos arquivos
+• ordem que as partes internas são armazenadas (com exceção do cabeçalho)
+• o tamanho do sistema de arquivos é de escolha do usuário mas não pode
+ser muito pequeno a ponto de o sistema de arquivos não ser utilizável
+• os primeiros bytes devem conter um cabeçalho contendo informações
+necessárias para encontrar o restante das informações
+• tamanho do cabeçalho
+• tamanho do bloco
+• tamanho do sistema de arquivos
+• endereço de início da FAT
+• endereço de início do diretório raiz
+• endereço de início dos dados
+

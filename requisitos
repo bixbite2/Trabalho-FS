@@ -1,0 +1,62 @@
+
+O FURGfs3 é um pequeno sistema de arquivos que reside inteiramente dentro
+de um outro arquivo a ser armazenado em um sistema de arquivos real. Ele usa
+conceitos vistos em aula como FAT (tabela de alocação de arquivos) e operações
+sobre arquivos e diretórios. O FURGfs3 suporta diretórios e um número finito (e
+> 100) de arquivos. Sua tarefa é criar um programa que implementa o FURGfs3.
+As operações suportadas são:
+
+1. criar um FURGfs3 no tamanho escolhido pelo usuário (você pode delimitar
+opções tamanhos mínimos e máximos, desde que mínimo 6 = máximo)
+• está opção resultará na criação de um novo arquivo no sistema de arquivos
+real (e.g., trabalhos/SO/furgfs3.fs)
+• este novo arquivo terá o tamanho escolhido para o FURGfs3
+• i.e., se o usuário escolheu criar um sistema de arquivos de 800MB, o arquivo
+furgfs3.fs terá 800MB.
+
+
+2. copiar um arquivo de um sistema de arquivos real (disco, pendrive, etc)
+para dentro do FURGfs3
+
+
+3. copiar um arquivo de dentro do FURGfs3 para um sistema de arquivos real
+(disco, pendrive, etc)
+
+
+4. renomear um arquivo armazenado no FURGfs3
+
+
+5. remover um arquivo armazenado no FURGfs3
+
+
+6. listar os arquivos/diretórios armazenados no FURGfs3
+
+
+7. listar o espaço livre em relação ao total do FURGfs3
+• e.g., 301MB livres de 800MB
+
+
+8. proteger/desproteger arquivos de escrita/remoção
+
+• alguns parâmetros devem ser decididos na implementação:
+• tamanho do bloco
+• tamanho máximo do nome dos arquivos
+• ordem que as partes internas são armazenadas (com exceção do cabeçalho)
+• o tamanho do sistema de arquivos é de escolha do usuário mas não pode
+ser muito pequeno a ponto de o sistema de arquivos não ser utilizável
+• os primeiros bytes devem conter um cabeçalho contendo informações
+necessárias para encontrar o restante das informações
+• tamanho do cabeçalho
+• tamanho do bloco
+• tamanho do sistema de arquivos
+• endereço de início da FAT
+• endereço de início do diretório raiz
+• endereço de início dos dados
+
+• O trabalho terá requisitos mínimos e recomendados
+• trabalhos que implementem apenas os requisitos mínimos terão nota
+oscilando próximo à média (7)
+• para alcançar notas maiores será necessário implementar (parte) dos
+requisitos recomendados
+• para trabalhos desenvolvidos em grupo espera-se mais funcionalidades que
+aqueles feitos de forma individual
