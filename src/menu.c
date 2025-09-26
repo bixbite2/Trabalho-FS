@@ -1,5 +1,12 @@
 #include "menu.h"
 #include <stdio.h>
+#include "create_fs.h"
+#include "cp_in.h"
+#include "cp_out.h"
+#include "rename_file.h"
+#include "rm.h"
+#include "ls.h"
+#include "df.h"
 
 void show_menu() {
     printf("\n--- File System Menu ---\n");
@@ -47,36 +54,29 @@ void handle_option(int option) {
 }
 
 void cp_in_ui() {
-    printf("Função 'Copiar para o FS' chamada.\n");
-    // Lógica para cp_in aqui
+    cp_in();
 }
 
 void cp_out_ui() {
-    printf("Função 'Copiar para fora do FS' chamada.\n");
-    // Lógica para cp_out aqui
+    cp_out();
 }
 
 void rename_ui() {
-    printf("Função 'Renomear arquivo' chamada.\n");
-    // Lógica para rename aqui
+    rename_file();
 }
 
 void rm_ui() {
-    printf("Função 'Remover arquivo' chamada.\n");
-    // Lógica para rm aqui
+    rm();
 }
 
 void ls_ui() {
-    printf("Função 'Listar arquivos' chamada.\n");
-    // Lógica para ls aqui
+    ls();
 }
 
 void df_ui() {
-    printf("Função 'Mostrar espaço livre' chamada.\n");
-    // Lógica para df aqui
+    df();
 }
 
 void create_fs_ui() {
-    printf("Função 'Criar File System' chamada.\n");
-    // Lógica para create_fs aqui
+    create_fs();
 }
