@@ -9,10 +9,10 @@
 #include "df.h"
 
 void show_menu() {
-    printf("\n--- File System Menu ---\n");
-    printf("1. Criar File System (create_fs)\n");
-    printf("2. Copiar para o FS (cp_in)\n");
-    printf("3. Copiar para fora do FS (cp_out)\n");
+    printf("\n--- Menu do Sistema de Arquivos ---\n");
+    printf("1. Criar Sistema de Arquivos (create_fs)\n");
+    printf("2. Copiar para o SA (cp_in)\n");
+    printf("3. Copiar para fora do SA (cp_out)\n");
     printf("4. Renomear arquivo (rename)\n");
     printf("5. Remover arquivo (rm)\n");
     printf("6. Listar arquivos (ls)\n");
@@ -78,5 +78,15 @@ void df_ui() {
 }
 
 void create_fs_ui() {
-    create_fs();
+    long long int size_mb;
+    printf("Digite o tamanho do sistema de arquivos em MB (mínimo 1MB): ");
+    scanf("%lld", &size_mb);
+
+    if (size_mb < 1) {
+        printf("O tamanho deve ser de no mínimo 1MB.\n");
+        return;
+    }
+
+    long long int fs_size = size_mb * 1024 * 1024;
+    create_fs(fs_size);
 }
