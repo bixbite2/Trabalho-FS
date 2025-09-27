@@ -3,6 +3,6 @@
 
 #include "create_fs.h"
 
-void rm();
+void rm(const char *filename);
 
 #endif

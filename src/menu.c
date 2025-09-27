@@ -54,11 +54,21 @@ void handle_option(int option) {
 }
 
 void cp_in_ui() {
-    cp_in();
+    char source_path[1024], dest_filename[55];
+    printf("Digite o caminho do arquivo de origem: ");
+    scanf("%1023s", source_path);
+    printf("Digite o nome do arquivo de destino: ");
+    scanf("%54s", dest_filename);
+    cp_in(source_path, dest_filename);
 }
 
 void cp_out_ui() {
-    cp_out();
+    char source_filename[55], dest_path[1024];
+    printf("Digite o nome do arquivo de origem no sistema de arquivos: ");
+    scanf("%54s", source_filename);
+    printf("Digite o caminho de destino no sistema hospedeiro: ");
+    scanf("%1023s", dest_path);
+    cp_out(source_filename, dest_path);
 }
 
 void rename_ui() {
@@ -66,7 +76,10 @@ void rename_ui() {
 }
 
 void rm_ui() {
-    rm();
+    char filename[55];
+    printf("Digite o nome do arquivo a ser removido: ");
+    scanf("%54s", filename);
+    rm(filename);
 }
 
 void ls_ui() {

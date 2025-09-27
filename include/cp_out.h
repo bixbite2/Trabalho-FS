@@ -3,6 +3,6 @@
 
 #include "create_fs.h"
 
-void cp_out();
+void cp_out(const char *source_filename, const char *dest_path);
 
 #endif
